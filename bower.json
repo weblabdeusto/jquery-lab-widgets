@@ -1,0 +1,29 @@
+{
+  "name": "jquery-lab-widgets",
+  "description": "jQuery based widgets for WebLab-Deusto remote laboratories",
+  "main": "ui/entry.js",
+  "authors": [
+    "weblab-deusto"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "weblab",
+    "weblab-deusto",
+    "deusto",
+    "widgets",
+    "laboratories",
+    "remote",
+    "labs"
+  ],
+  "homepage": "https://github.com/weblabdeusto/jquery-lab-widgets",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": ">=1.6"
+  }
+}
