@@ -38,7 +38,7 @@ CameraRefresher = function (img_id) {
     //! started through start(), then this method is invoked
     //! periodically.
     this.refresh = function () {
-        if (_url == undefined || _url == null)
+        if (_url === undefined || _url === null)
             _url = $img.attr("src");
         $img.attr("src", this._get_timestamped_url(_url));
     };
@@ -81,7 +81,7 @@ CameraRefresher = function (img_id) {
     this.start = function (url) {
 
         // If null or empty we will use the previous URL.
-        if (url == undefined || url == null || url.length == 0) {
+        if (url === undefined || url === null || url.length === 0) {
             url = $img.attr("src");
         }
 
@@ -107,7 +107,7 @@ CameraRefresher = function (img_id) {
         // Remove the load listener.
         $img.off("load error");
 
-        if (_refreshingTimeout != null) {
+        if (_refreshingTimeout !== null) {
             clearTimeout(_refreshingTimeout);
             _refreshingTimeout = null;
         }
